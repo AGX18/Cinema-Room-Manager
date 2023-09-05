@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class Cinema {
     private static int noOfPurchasedTickets = 0;
-//    private static int totalIncome = 0;
     private static int currentIncome = 0;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -18,8 +17,6 @@ public class Cinema {
         }
         int totalSeats = rows * seats;
 
-//        PrintSeats(seats, rows);
-//        System.out.println();
 
 
         boolean done = false;
@@ -36,10 +33,6 @@ public class Cinema {
 
         }
 
-        //System.out.println();
-        //PrintSeats(seats, rows);
-
-        //totalIncome(totalSeats, rows, seats);
     }
 
     private static void totalIncome(int totalSeats, int rows, int seats) {
@@ -53,22 +46,6 @@ public class Cinema {
         System.out.println("Total income: " + "$" + totalIncome);
     }
 
-//    private static void PrintSeats(char[][] SeatArr,int seats, int rows, int row, int seat) {
-//        // printing arrangement of seats
-//        System.out.println("Cinema:");
-//        System.out.print("  ");
-//        for(int i = 1; i <= seats; i++){
-//            System.out.print(i + " ");
-//        }
-//        System.out.println();
-//        for(int i = 1; i <= rows /* rows */; i++){
-//            System.out.print(i + " ");
-//            for(int j = 1; j <= seats /* rows */; j++){
-//                System.out.print(SeatArr[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
-//    }
 
 
     private static void PrintSeats(char[][] seatArr,int seats, int rows) {
